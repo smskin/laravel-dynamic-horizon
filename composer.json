@@ -1,0 +1,70 @@
+{
+    "name": "smskin/laravel-dynamic-horizon",
+    "description": "Dynamic supervisors\\queues for laravel horizon",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "horizon",
+        "queue",
+        "supervisor",
+        "dynamic"
+    ],
+    "authors": [
+        {
+            "name": "Sergey Mikhailov (smskin)",
+            "email": "sms7@yandex.ru"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "laravel/horizon": "^5.0",
+        "illuminate/support": "^9.21|^10.0|^11.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.54",
+        "mockery/mockery": "^1.4",
+        "orchestra/testbench": "^8 || ^9",
+        "phpunit/phpunit": "^10.5",
+        "vimeo/psalm": "^5.4"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "SMSkin\\LaravelDynamicHorizon\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SMSkin\\LaravelDynamicHorizon\\Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/package-versions-deprecated": true,
+            "php-http/discovery": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SMSkin\\LaravelDynamicHorizon\\Providers\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "analyze": "psalm",
+        "check-style": [
+            "php-cs-fixer fix --diff --dry-run",
+            "php-cs-fixer fix --diff --dry-run --config=.php-cs-fixer.tests.php"
+        ],
+        "fix-style": [
+            "php-cs-fixer fix",
+            "php-cs-fixer fix --config=.php-cs-fixer.tests.php"
+        ],
+        "psalm-set-baseline": "psalm --set-baseline=psalm-baseline.xml",
+        "test": "phpunit"
+    }
+}

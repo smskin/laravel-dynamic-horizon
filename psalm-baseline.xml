@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="5.26.1@d747f6500b38ac4f7dfc5edbcae6e4b637d7add0">
+  <file src="src/Contracts/IStorage.php">
+    <MissingTemplateParam>
+      <code><![CDATA[Collection<Supervisor>]]></code>
+      <code><![CDATA[Collection<Supervisor>]]></code>
+    </MissingTemplateParam>
+  </file>
+  <file src="src/DynamicHorizon.php">
+    <MissingTemplateParam>
+      <code><![CDATA[Collection<Supervisor>]]></code>
+      <code><![CDATA[Collection<Supervisor>]]></code>
+    </MissingTemplateParam>
+    <UnusedClass>
+      <code><![CDATA[DynamicHorizon]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Listeners/LMasterSupervisorLooped.php">
+    <MissingTemplateParam>
+      <code><![CDATA[$toAdd->each(function (SupervisorOptions $options) use ($event) {
+                (new AddSupervisor())->process($event->master, $options->toArray());
+                $this->log('Added supervisor: ' . $options->name);
+            })]]></code>
+      <code><![CDATA[$toDrop->each(function (SupervisorProcess $supervisor) {
+                $supervisor->stop();
+                $this->log('Stopped supervisor: ' . $supervisor->options->name);
+            })]]></code>
+      <code><![CDATA[Collection<SupervisorOptions>]]></code>
+      <code><![CDATA[Collection<SupervisorOptions>]]></code>
+      <code><![CDATA[Collection<SupervisorOptions>]]></code>
+      <code><![CDATA[Collection<SupervisorOptions>]]></code>
+      <code><![CDATA[Collection<SupervisorProcess>]]></code>
+      <code><![CDATA[Collection<SupervisorProcess>]]></code>
+      <code><![CDATA[Collection<SupervisorProcess>]]></code>
+      <code><![CDATA[Collection<SupervisorProcess>]]></code>
+    </MissingTemplateParam>
+    <PossiblyUnusedMethod>
+      <code><![CDATA[__construct]]></code>
+      <code><![CDATA[handle]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Models/Supervisor.php">
+    <PossiblyUnusedMethod>
+      <code><![CDATA[__construct]]></code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Providers/ServiceProvider.php">
+    <UnusedClass>
+      <code><![CDATA[ServiceProvider]]></code>
+    </UnusedClass>
+  </file>
+  <file src="src/Repositories/Storage.php">
+    <MissingTemplateParam>
+      <code><![CDATA[$this->all()
+            ->forget(
+                $this->getIndexByName($supervisor->name)
+            )]]></code>
+      <code><![CDATA[$this->all()->forget(
+            $this->getIndexByName($supervisor->name)
+        )]]></code>
+      <code><![CDATA[$this->all()->push($supervisor)]]></code>
+      <code><![CDATA[Collection<Supervisor>]]></code>
+      <code><![CDATA[Collection<Supervisor>]]></code>
+    </MissingTemplateParam>
+  </file>
+</files>
