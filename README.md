@@ -65,9 +65,10 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
 
 (new DynamicHorizon())->updateSupervisor(
     new Supervisor(
-        'user1-supervisor',
+        'user3-supervisor',
         [
-            'user1-queue',
+            'user3-queue-1',
+            'user3-queue-2',
         ]
     )
 );
