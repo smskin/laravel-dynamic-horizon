@@ -41,6 +41,8 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 ]))
 ```
+![set configuration screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/set.png)
+
 3. Добавление супервизора в конфигурацию
 ```php
 use SMSkin\LaravelDynamicHorizon\DynamicHorizon;  
@@ -55,6 +57,8 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 );
 ```
+![add supervisor screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/add.png)
+
 4. Обновление конфигурации одного из супервизоров
 ```php
 use SMSkin\LaravelDynamicHorizon\DynamicHorizon;  
@@ -70,6 +74,8 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 );
 ```
+![update supervisor screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/update.png)
+
 5. Остановка одного из супервизоров
 ```php
 use SMSkin\LaravelDynamicHorizon\DynamicHorizon;  
@@ -84,9 +90,12 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 );
 ```
+![stop supervisor screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/stop.png)
+
 6. Остановка всех динамических супервизоров
 ```php
 use SMSkin\LaravelDynamicHorizon\DynamicHorizon;  
 
 (new DynamicHorizon())->stopAllSupervisors();
 ```
+![stop all supervisors screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/stop_all.png)
