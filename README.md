@@ -42,6 +42,7 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 ]))
 ```
+![set configuration screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/set.png)
 
 3. Adding a supervisor to the configuration
 ```php
@@ -57,6 +58,7 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 );
 ```
+![add supervisor screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/add.png)
 
 4. Updating the configuration of one of the supervisors
 ```php
@@ -73,6 +75,7 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 );
 ```
+![update supervisor screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/update.png)
 
 5. Stopping one of the supervisors
 ```php
@@ -88,6 +91,7 @@ use SMSkin\LaravelDynamicHorizon\Models\Supervisor;
     )
 );
 ```
+![stop supervisor screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/stop.png)
 
 6. Stopping all dynamic supervisors
 ```php
@@ -95,3 +99,4 @@ use SMSkin\LaravelDynamicHorizon\DynamicHorizon;
 
 (new DynamicHorizon())->stopAllSupervisors();
 ```
+![stop all supervisors screenshot](https://github.com/smskin/laravel-dynamic-horizon/blob/readme/screenshots/stop_all.png)
